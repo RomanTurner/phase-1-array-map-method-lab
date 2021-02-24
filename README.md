@@ -186,6 +186,25 @@ const tutorials = [
 ];
 ```
 
+const titleCased = (array) =>
+  array.map((element) =>
+    element.split(' ')
+      .map((subString) =>
+        subString.substring(0, 1).toUpperCase())
+    
+    
+
+
+
+    .split(" ")
+    .toLowerCase()
+
+    .map(function (word) {
+      return word.replace(word[0], word[0].toUpperCase());
+    })
+    .join(" ");
+    
+
 **NOTE:** This lab is challenging! You will need to iterate through the
 `tutorials` array, modifying the name of each tutorial. To do this, you will
 **also** need to access and modify each individual word.
